@@ -1,0 +1,71 @@
+var myName = "Brendo Jonch";
+
+let language = "JavaScript";
+
+const padrao = "ECMAScript";
+
+//objeto,array,function//
+
+var person = {
+    "name": "Brendo Jonch",
+    "Age": "24"
+}
+
+var students = ["Brendo", "Julia", "Isabel", "Larissa"]
+
+function sum(a, b) {
+    return a + b
+}
+
+//operador typeof//
+
+//console.log(typeof)
+
+//operadores de atribuição//
+
+var x = 1;
+var y = 3;
+//console.log(x+=y == x= x+y) //usar x+=y e a mesma coisa que x=x+y//
+
+//operadores de comparação//
+
+// ==
+// ===
+//!=
+//< ou <=
+//> ou >=
+
+//operadores logicos
+
+//e  && 
+//ou ||
+// ! negação
+
+
+var mes = "março"
+
+switch (mes) {
+    case "fevereiro":
+        console.log("mes 2");
+        break;
+
+    case "março":
+        console.log("mes 3");
+        break;
+    case "janeiro":
+        console.log("mes 1");
+        break;
+
+   default:
+        console.log("nenhum dos casos acima");
+
+//}
+
+//estrutura de repetiçoes//
+
+//var colors = ["AZUL", "VERDE", "AMARELO"];
+
+//for (var i = 0; i <= 10; i++) {
+  //  console.log(i);
+//}
+
