@@ -69,3 +69,161 @@ switch (mes) {
   //  console.log(i);
 //}
 
+var i = 0;
+
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+
+
+var i = 0;
+
+do {
+    console.log(i);
+    i++;
+} while (i <= 10);
+
+
+function sayHello (name, lastName) {  //colocamos uma ação como classe.
+    console.log('Hello ' + name + ' ' + lastName);
+
+}
+
+sayHello("Brendo", "Jonch");
+
+
+function sayHello(name, lastName) {  //colocamos uma ação como classe.
+    console.log('Hello ' + name + ' ' + lastName);
+
+}
+
+sayHello("Brendo", "Jonch");
+
+function sum(a, b, c) {
+    return a + b + c
+}
+console.log(sum(40, 60, 100));
+
+FUNCOES
+
+function sayHello(name, lasteName, Codigo) {
+    console.log('Hello : ' + name + lasteName + Codigo);
+}
+sayHello("Brendo", ' ' +    "Jonch", ' ' + "122443")
+
+CLASS
+
+class Book {
+    constructor(title, author, pages, capitulos) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.capitulos = capitulos
+
+    }
+
+    read() {
+        return `Estou lendo ${this.title}`
+    }
+}
+let book = new Book('Algoritmos para viver', 'Brendo', '500', '10');
+let OtherBook = new Book('Clear code', 'joao', '100', '10');
+
+
+
+console.log(book.read());
+console.log(OtherBook.read());
+
+--
+
+class Book {
+    constructor(title, author, pages, capitulos) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.capitulos = capitulos
+
+    }
+
+    read() {
+        return `Estou lendo ${this.title}`
+    }
+}
+class ITBook extends Book { //extends para fazer//
+    constructor(title, author, pages, capitulos, tech) {
+        super(title, author, pages, capitulos) //classes que são erdadas do Book;
+        this.tech = tech;
+    }
+
+}
+
+let itBook = new ('Algoritmos', 'Brendo', '500', 'algoritmos');
+--
+
+
+class Person {
+    constructor(name) {
+        this._name = name;          //andscor faz que a classe seja mais "privada"//
+    }
+    // tem que dar o get para ser visivel via console.log.//
+    get name() {
+        return this._name;
+    }
+
+    set name(value) {
+        this._name = value; //permite que reatribua novos valores//
+    }
+}
+
+let person = new Person('Brendo'); // instanciar obj > new e a palavra reservada para criação de objeto >informação 'brendo'.//
+person.name = 'Bre' // ja consigo Ecetar novos valores//
+console.log(person.name);
+--
+
+EXERCICIOS JavaScript;
+
+FIZZBUZZ
+
+let resultado = fizzBuzz(7);
+console.log(resultado)
+
+function fizzBuzz(entrada) {
+    if (typeof entrada !== 'number')
+        return 'Não é um numero!!';
+    if ((entrada % 3 === 0) && (entrada % 5 == 0))
+        return 'FizzBuzz'
+    if (entrada % 3 === 0)
+        return 'Fizz';
+    if (entrada % 5 === 0)
+        return 'Buzz';
+
+    return entrada;
+
+
+}
+
+
+INVERTER NOME
+
+
+let newStr = '';
+
+function reverseAString(str) {
+    for (let i = str.length - 1; i >= 0; i--) {
+        newStr += str[i];
+        console.log(newStr);
+    }
+}
+
+let resultado = reverseAString('Brendo')
+
+CONVERSOR Fahrenheit
+
+function convertToFahrenheit(value) {
+    return value * 1.8 + 32
+
+}
+
+let result = convertToFahrenheit(40)
+console.log(`O Valor em Fahrenheit é  ${result}`)
